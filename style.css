@@ -40,7 +40,8 @@ body {
     align-self: center;
     padding-left: 3vw;
     padding-right: 3vw;
-    font-size: clamp(1rem, 2vw + 1rem, 2.25rem);
+/*     font-size: clamp(1rem, 2vw + 1rem, 2.25rem); */
+    font-size: 3.5vw;
     text-transform: uppercase;
  }
 
