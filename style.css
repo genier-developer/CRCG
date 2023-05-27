@@ -161,16 +161,18 @@ body {
 .mission_area {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     gap: 1em;
     padding: .7em 0 2em;
-    text-align: center;
+
 
 }
 
 .mission_area_card {
+    display: block;
     align-items: stretch;
-    padding: 1em;
+    padding: 0.7em;
 
 }
 
