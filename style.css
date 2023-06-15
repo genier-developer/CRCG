@@ -12,12 +12,11 @@ body {
 }
 
 .container {
-    max-width: 1220px;
+    max-width: 1100px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    font-size: clamp(1.25rem, 2vw + 1rem, 1.875rem);    
-
+    font-size: clamp(16px, 4vw, 26px);
     
 }
 
@@ -30,17 +29,16 @@ body {
 }
 
 .header__CRCG_logo img{
-    padding: 0 3vw 0 3vw;
     display: block;
-    max-width: 100%;
+    max-width: 65%;
+    height: auto;
+    object-fit: cover;	
 }
 
 .header__CRCG_name {
-    font-size: clamp(1.25rem, 1vw + 1rem, 1.875rem);
+    font-size: clamp(14px, 4vw, 26px);
     align-self: center;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    font-size: clamp(0.8rem, 1vw + 0.875rem, 1.75rem);
+    padding-right: clamp(14px, 4vw, 26px);
     text-transform: uppercase;
  }
 
@@ -48,24 +46,32 @@ body {
     position: sticky;
     top: 0;
     z-index: 2;
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 0.1fr auto ;
     justify-content: center;
-    padding: 2vw 3.5vw 2vw 3.5vw;
+    padding: 1.5vw 2.5vw 1.5vw 2.5vw;
     background-color: #6991b6;
     box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.1);
  
 }
 
 .header__image_ringing_phone img{
-    padding-right: clamp(1.125rem, 2vw + 1rem, 1.875rem);
+    width: clamp(20px, 5vw, 26px);
     vertical-align: middle;
 }
 
-.main {
+.header__pnone_block_items {
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
-    padding: 4vw;
+}
+
+.main {
+    padding: clamp(16px, 4vw, 26px);
     background-color: #F5F5F5;
+    text-align: center;
     
 }
 
@@ -75,12 +81,12 @@ body {
     flex-direction: row;
     justify-content: right;
     text-decoration: underline;
-    font-size: clamp(1.5rem, -4vw + 2rem, 2.5rem);
+    font-size: clamp(1em, -4vw, 1.3em);
 
 }
 
 .english_language {
-    padding-right: 1em;
+    /* padding-right: 1em; */
     padding-bottom: 1em;
 
 }
@@ -91,7 +97,7 @@ body {
 }
 
 .french_language {
-    padding-left: 1em;
+    /* padding-left: 1em; */
     padding-bottom: 1em;
 
 }
@@ -107,18 +113,17 @@ body {
 
 }
 
-.main h2 {
-    padding-bottom: 1em;
+.main h2,
+.main h3,
+.main__info_info, 
+.main__text p
+{
+    padding-bottom: 1.2em;
 
 }
 
-.main__info_info {
-    padding-bottom: 3vw;
-
-}
 
 .main h3 {
-    padding: 1.5em 0 1em;
     text-decoration: underline;
 
 }
@@ -126,8 +131,8 @@ body {
 .main__info img {
     max-width: 100%;
     height: auto;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
+    padding-top: 1em;
+    padding-bottom: 1em;
     opacity: 0.45;
 
 }
@@ -142,13 +147,31 @@ body {
 
 }
 
+@media (min-width: 900px) {
+    .product_area {
+        width: 550px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+
+    /* .main__info img {
+        max-width: 700px;
+        height: auto;
+        display: block;
+        margin: auto;
+
+    } */
+}
+
 .product_area_card {
     background-color: #BED4E9;
-    align-items: center;
+    text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     padding: 1em 1em 1em 1em;
-    font-size: 0.8em;
+    font-size: 0.9em;
 
 }
 
@@ -163,7 +186,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1em;
-    padding: .7em 0 2em;
+    padding: 0.7em 0 2em;
 
 
 }
@@ -172,6 +195,11 @@ body {
     display: block;
     align-items: stretch;
     padding: 0.7em;
+
+}
+
+.help_decision span {
+    text-decoration: underline;
 
 }
 
@@ -204,7 +232,7 @@ body {
     background-color: #BED4E9;
     display: flex;
     flex-wrap: nowrap;
-    padding: 3vw 3vw 4vw 3vw;
+    padding: 2vw 3vw 2vw 3vw;
     justify-content: space-between;
 
 }
