@@ -36,6 +36,7 @@ body {
 }
 
 .header__CRCG_name {
+    padding-top: 10px;
     font-size: clamp(14px, 4vw, 26px);
     align-self: center;
     padding-right: clamp(14px, 4vw, 26px);
